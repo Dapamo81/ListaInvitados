@@ -37,3 +37,10 @@ function quitar(){
         alert('Roberto no esta en la lista');
     }
 }
+
+function añadir(){
+    const nuevos =["Juan", "Rafa", "Anais", "Lis"];
+    invitados = invitados.concat(nuevos);
+    alert("Se han añadido invitados de la fiesta de al lado.");
+    mostrarLista();
+}
