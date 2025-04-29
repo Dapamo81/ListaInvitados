@@ -44,3 +44,20 @@ function añadir(){
     alert("Se han añadido invitados de la fiesta de al lado.");
     mostrarLista();
 }
+
+function buscarInvitado(){
+    const nombre = document.getElementById("buscarInput").value.trim().toUpperCase();
+    const resultadoDiv = document.getElementById("resultadoBuscar");
+    const invitadosMayusculas = invitados.map(inv => inv.toUpperCase());
+
+    if(nombre === ""){
+        resultadoDiv.innerHTML = "Por favor, ingrese un nombre.";
+        return;
+    }
+    if(invitadosMayusculas.includes(nombre)){
+        resultadoDiv.innerHTML = '<span style= "color:green">' +nombre+ '</span> está en la lista.'; 
+    }else{
+        resultadoDiv.innerHTML = '<span style= "color:red">' + nombre + '</span> no está en la lista.'; 
+    }
+
+}
