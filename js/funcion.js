@@ -1,4 +1,4 @@
-let invitados=["Juan", "Maria", "Roberto", "Luis", "Ana"];
+let invitados=[ "Juan", "Maria", "Roberto", "Luis", "Ana"];
 
 function mostrarLista(){
     const listaDiv = document.getElementById("listaInvitados");
@@ -26,4 +26,14 @@ function colar(){
         alert("Se Ha añadido Marta a la lista");
     }
     mostrarLista();
+}
+
+function quitar(){
+    const indexRoberto = invitados.indexOf("Roberto");
+    if(indexRoberto !== -1){
+        invitados.splice(indexRoberto,1);
+        alert("Roberto no pued venir, se elimina de la lista");
+    }else{
+        alert('Roberto no esta en la lista');
+    }
 }
