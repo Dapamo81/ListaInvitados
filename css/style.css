@@ -3,4 +3,54 @@
     padding: 0px;
 }
 
-
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+.section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+button {
+    padding: 10px 15px;
+    margin: 5px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    margin-right: 10px;
+}
+#listaInvitados {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #eef;
+    border-radius: 5px;
+}
+#resultadoBuscar{
+    margin-top: 10px;
+    font-weight: bold;
+}
+h2 {
+    margin-top: 0;
+}

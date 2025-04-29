@@ -32,10 +32,11 @@ function quitar(){
     const indexRoberto = invitados.indexOf("Roberto");
     if(indexRoberto !== -1){
         invitados.splice(indexRoberto,1);
-        alert("Roberto no pued venir, se elimina de la lista");
+        alert("Roberto no puede venir, se elimina de la lista");
     }else{
         alert('Roberto no esta en la lista');
     }
+    mostrarLista()
 }
 
 function añadir(){
