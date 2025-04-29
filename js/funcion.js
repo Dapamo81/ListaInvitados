@@ -8,3 +8,11 @@ function mostrarLista(){
         listaDiv.innerHTML= invitados.join("<br>");
     }
 }
+
+function agregar(){
+    invitados.push("Juani");
+    invitados.push("Alex");
+
+    alert("Juani y alex Se han añadido a la lista");
+    mostrarLista();
+}
